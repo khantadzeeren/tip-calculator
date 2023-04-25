@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #C5E4E7;
+    font-family: 'Space Mono', monospace;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 41px;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    height: 789px;
+    width: 100%;
+    box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+    border-radius: 25px 25px 0px 0px;
+}
+
+.calculation {
+    padding: 32px 33px;
+    padding-bottom: 0;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    background-color: #00474B;
+    height: 257px;
+    width: 327px;
+    border-radius: 15px;
+    padding: 39px 22px 24px 24px;
+    margin-bottom: 32px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 16.56px;
+    grid-row-gap: 16px;
+    padding-top: 16px;
+    padding-bottom: 32px;
+}
+
+.bill, .tip, .number {
+    color: #5E7A7D;
+    font-size: 16px;
+    line-height: 23.7px;
+}
+
+.percentage {
+    color: #26C2AE;
+    font-size: 32px;
+    line-height: 47.39px;
+    letter-spacing: -0.67px;
+}
+
+.tipAmount, .total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons button {
+    width: 146.63px;
+    height: 48px;
+    background-color: #00474B;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 24px;
+    line-height: 35.54px;
+    font-family: 'Space Mono', monospace;
+}
+
+.buttons button:hover {
+    cursor: pointer;
+}
+
+.resetButton:hover {
+    cursor: pointer;
+}
+
+.custom {
+    width: 146.63px;
+    height: 48px;
+    background-color: #F3F9FA;
+    border-radius: 5px;
+    border: none;
+    font-size: 24px;
+    line-height: 35.54px;
+    font-family: 'Space Mono', monospace;
+}
+
+.custom::placeholder {
+    color: #547878;
+    display: flex;
+    text-align: center;
+    padding-right: 0px;
+}
+
+.custom {
+    color: #00474B;
+    text-align: right;
+}
+
+.price, .people {
+    color: #00474B;
+    text-align: right;
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    line-height: 35.54px;
+    padding-right: 17.48px;
+    outline: none;
+}
+
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+
+h1 {
+    font-size: 16px;
+    line-height: 23.7px;
+    color: white;
+}
+
+h2 {
+    color: #7F9D9F;
+    font-size: 13px;
+    line-height: 19px;
+}
+
+.resetButton {
+    color: #00474B;
+    background-color: #26C2AE;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Space Mono', monospace;
+    border: none;
+    border-radius: 5px;
+    height: 48px;
+}
+
+.total {
+    padding-top: 25px;
+    padding-bottom: 35px;
+}
+
+.price, .people {
+    background-color: #F3F9FA;
+    width: 311px;
+    height: 48px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 19px;
+    margin-top: 6px;
+    margin-bottom: 32px;
+    border: none;
+}
+
+.price::placeholder {
+    font-family: 'Space Mono', monospace;
+    color: #9EBBBD;
+    font-size: 24px;
+    line-height: 35.54px;
+    text-align: right;
+    padding-right: 17px;
+}
+
+.people::placeholder {
+    font-family: 'Space Mono', monospace;
+    color: #9EBBBD;
+    font-size: 24px;
+    line-height: 35.54px;
+    text-align: right;
+    padding-right: 17px;
+}
+
+.typing {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    left: 16.87px;
+    top: 13.26px;
+}
+
+.peopleFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.error {
+    display: none;
+    color: #E17457;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23.7px;
+}
+
+/* DESKTOP QUERY */
+
+
+@media screen and (min-width: 1339.5px) {
+    
+.calculator {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 920px;
+    height: 481px;
+    margin: auto;
+    margin-top: 87.86px;
+    padding-left: 0px;
+    padding-right: 32px;
+    border-radius: 25px
+}
+
+
+.buttons {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 14px;
+    /* padding-top: 16px;
+    padding-bottom: 32px; */
+}
+
+.buttons button {
+    width: 117px;
+}
+
+.custom {
+    width: 117px;
+}
+
+.price, .people {
+    width: 379px;
+}
+
+.price {
+    margin-bottom: 40px;
+}
+
+.people {
+    margin-bottom: 0px;
+}
+
+.calculation {
+    padding: 45px 48px 48px 48px;
+}
+
+.resetButton {
+    width: 333px;
+
+}
+
+.total {
+    padding-top: 53px;
+    padding-bottom: 0px;
+}
+
+.percentage {
+    font-size: 48px;
+    line-height: 71.09px;
+    letter-spacing: -1px;
+}
+
+.result {
+    height: 417px;
+    width: 413px;
+    padding: 40px;
+    padding-top: 56px;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+
+}
